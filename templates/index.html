@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>YOUTUBE VIDEO DOWNLOADER</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">TOUTUBE VIDEO DOWNLOADER</h1>
+
+    <div class="form">
+        <form action="/review" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="CLICK ME BRO">
+        </form>
+    </div>
+</div>
+{% endblock %}
